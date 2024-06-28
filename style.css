@@ -7,7 +7,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .hero-header {
@@ -92,11 +92,17 @@ nav .navlinks li a{
     margin-right: 2.5rem;
 }
 
+nav .navlinks li a:hover{
+    color:#007ced
+}
+
+
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 4rem;
+    position: fixed;
 }
 
 .container .hero-pic {
@@ -159,6 +165,10 @@ border: 2px solid #e5e5e5;
 box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 
+.btn-group .btn:hover{
+    opacity: 0.5;
+}
+
 .btn:active{
     border-color: #007ced;
 }
@@ -175,8 +185,11 @@ box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
     transform: rotate(360deg);
 }
 
-
 @media(max-width:930px) {
+body {
+    overflow: hidden;
+}
+
     nav .togglebtn{
         display: initial;
     }
@@ -231,6 +244,8 @@ box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
     nav .navlinks.open {
         right: 0;
     }
+
+    
 }
 
 @media(max-width:768px)
